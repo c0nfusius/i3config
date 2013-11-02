@@ -44,7 +44,7 @@ assign [class="Chromium"] 2:www
 assign [class="Icedove"] 2:www
 assign [class="Vlc"] 10:media
 for_window [class="Gnome-terminal"] border 1pixel
-
+for_window [class="qemu-system-i386"] floating enable
 
 # change focus
 bindsym $mod+j focus left
