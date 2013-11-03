@@ -44,7 +44,7 @@ assign [class="Chromium"] 2:www
 assign [class="Icedove"] 2:www
 assign [class="Vlc"] 10:media
 for_window [class="Gnome-terminal"] border 1pixel
-
+for_window [class="qemu-system-i386"] floating enable
 
 # change focus
 bindsym $mod+j focus left
@@ -189,6 +189,8 @@ bindsym $mod+Control+s exec sudo pm-suspend
 
 #AUTOSTART
 exec feh --bg-center ~/Pictures/wallpaper.jpg
+exec xrandr --output DVI-I-2 --off
+exec xrandr --output DVI-I-2 --mode 1920x1080 --right-of DVI-I-1 
 #exec --no-startup-id i3-msg 'workspace 1; exec urxvt'
 #exec i3-msg workspace 2:www; chromium
 
